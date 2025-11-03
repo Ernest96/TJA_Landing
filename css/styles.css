@@ -2531,7 +2531,6 @@ body {
 
 .cosmonaut-img {
    max-height: 160px;
-   animation: float 4s ease-in-out infinite;
 }
 
 .reasons {
@@ -2569,6 +2568,17 @@ body {
 
 #cosmonaut1 {
    margin-left: 45px;
+   animation: float 4s ease-in-out infinite;
+}
+
+#cosmonaut2 {
+   animation: float 4s ease-in-out infinite;
+   animation-delay: 2.5s;
+}
+
+#cosmonaut3 {
+   animation: float 4s ease-in-out infinite;
+   animation-delay: 1.25s;
 }
 
 .carousel {
@@ -2655,8 +2665,8 @@ body {
    padding: 1rem;
    font-weight: bold;
    text-align: center;
-   border-bottom-left-radius: 1.25rem;
-   border-bottom-right-radius: 1.25rem;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
    font-size: 1.25rem;
 }
 
@@ -2677,7 +2687,7 @@ body {
    object-fit: cover;
    transition: transform 0.3s ease;
    width: 100%;
-   border-radius: 20px;
+   border-radius: 22px;
    transition: opacity 0.3s;
 }
 
