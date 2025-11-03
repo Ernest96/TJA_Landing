@@ -1,4 +1,10 @@
 function initMain() {
+
+    if (navigator.userAgent.includes('FBAN') || navigator.userAgent.includes('FBAV')) {
+        document.body.classList.add('messenger-fix');
+        alert("aaaa");
+    }
+
     AOS.init({
         duration: 350,
         once: true,
