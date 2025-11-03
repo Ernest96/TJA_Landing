@@ -2439,7 +2439,7 @@ body {
 }
 
 .messenger-fix .masthead {
-   min-height: max(100dvh, 1200px) !important;
+   min-height: 1200px !important;
 }
 
 .intro-video,
