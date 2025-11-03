@@ -875,7 +875,9 @@ iframe {
 .btn-social {
    color: #fff;
    background-color: #695fa9;
-
+   width: 50px;
+   height: 45px;
+   border-radius: 50%;
 }
 
 .btn-social:hover {
@@ -2455,7 +2457,7 @@ body {
 .btn-regulament {
    margin-top: 30px;
    color: white !important;
-   font-size: 1.4rem;
+   font-size: 1.2rem;
    /* background-color: #37b0e7; */
    background-color: #8763fd;
    transition: background-color 0.5s;
@@ -2477,7 +2479,7 @@ body {
 
 .btn-inscriere,
 .btn-regulament {
-   width: 190px;
+   min-width: 170px;
 }
 
 .stat-cards {
