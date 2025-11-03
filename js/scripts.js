@@ -19,9 +19,6 @@ function initMain() {
     };
 
 
-    const video = document.getElementById("heroVideo");
-    video.play();
-
 
     const counterElevi = new countUp.CountUp('counterElevi', 6700, counterSettings);
     const counterProfesori = new countUp.CountUp('counterProfesori', 750, counterSettings);
