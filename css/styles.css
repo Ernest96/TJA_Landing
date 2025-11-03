@@ -60,8 +60,13 @@
 
 html {
    background-color: #191919;
-   -webkit-text-size-adjust: 100%;
-   text-size-adjust: 100%;
+}
+
+html,body {
+  text-size-adjust: none !important;
+  -webkit-text-size-adjust: none !important;
+  -moz-text-size-adjust: none !important;
+  -ms-text-size-adjust: none !important;
 }
 
 *,
