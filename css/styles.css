@@ -1224,10 +1224,17 @@ iframe {
    padding-right: 1.5rem;
 }
 
+
+
 .section-title {
-   font-size: 32px;
+   font-size: 2.5rem;
    text-transform: uppercase;
 }
+
+.messenger-fix .section-title {
+   font-size: 24px;
+}
+
 
 .about-p {
    padding: 25px;
@@ -2429,6 +2436,10 @@ body {
 .masthead {
    min-height: max(100dvh, 900px) !important;
    padding: 0px;
+}
+
+.messenger-fix .masthead {
+   min-height: max(100dvh, 1200px) !important;
 }
 
 .intro-video,
