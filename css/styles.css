@@ -60,6 +60,8 @@
 
 html {
    background-color: #191919;
+   -webkit-text-size-adjust: 100%;
+   text-size-adjust: 100%;
 }
 
 *,
@@ -2467,7 +2469,8 @@ body {
    background-color: #8763fd;
 }
 
-.btn-regulament:hover, .btn-inscriere:hover {
+.btn-regulament:hover,
+.btn-inscriere:hover {
    background-color: #c463fd;
 }
 
@@ -2783,7 +2786,10 @@ body {
    background-color: rgba(19, 14, 23, 0.9);
 }
 
-.sl-close, button.sl-next, button.sl-prev, .sl-counter {
+.sl-close,
+button.sl-next,
+button.sl-prev,
+.sl-counter {
    color: white !important;
 }
 
