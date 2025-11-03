@@ -1224,6 +1224,9 @@ iframe {
    padding-right: 1.5rem;
 }
 
+.messenger-fix .about-title {
+   font-size: 24px;
+}
 
 
 .section-title {
@@ -2439,7 +2442,7 @@ body {
 }
 
 .messenger-fix .masthead {
-   min-height: 1200px !important;
+   min-height: 1600px !important;
 }
 
 .intro-video,
