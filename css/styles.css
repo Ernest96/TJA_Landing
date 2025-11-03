@@ -2665,8 +2665,8 @@ body {
    padding: 1rem;
    font-weight: bold;
    text-align: center;
-   border-bottom-left-radius: 20px;
-   border-bottom-right-radius: 20px;
+   border-bottom-left-radius: 18px;
+   border-bottom-right-radius: 18px;
    font-size: 1.25rem;
 }
 
@@ -3043,9 +3043,7 @@ button.sl-prev,
       text-align: center;
    }
 
-   .masthead {
-      min-height: 90dvh;
-   }
+   
 
    .navbar-brand.desktop {
       display: none;
