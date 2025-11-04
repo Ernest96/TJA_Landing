@@ -62,11 +62,12 @@ html {
    background-color: #191919;
 }
 
-html,body {
-  text-size-adjust: none !important;
-  -webkit-text-size-adjust: none !important;
-  -moz-text-size-adjust: none !important;
-  -ms-text-size-adjust: none !important;
+html,
+body {
+   text-size-adjust: none !important;
+   -webkit-text-size-adjust: none !important;
+   -moz-text-size-adjust: none !important;
+   -ms-text-size-adjust: none !important;
 }
 
 *,
@@ -119,7 +120,7 @@ h3,
 
 h4,
 .h4 {
-   font-size: calc(1.275rem );
+   font-size: calc(1.275rem);
 }
 
 h5,
@@ -1123,10 +1124,7 @@ iframe {
    margin-left: 0.75rem !important;
 }
 
-.mx-4 {
-   margin-right: 1.45rem !important;
-   margin-left: 1.45rem !important;
-}
+
 
 .my-3 {
    margin-top: 1rem !important;
@@ -1403,7 +1401,7 @@ a.categories-card:hover {
 
 .accordion-button h4::before {
    content: '-';
-   font-size: calc(1.275rem );
+   font-size: calc(1.275rem);
    margin-left: auto;
    font-family: monospace;
    color: #e998d6;
@@ -1413,7 +1411,7 @@ a.categories-card:hover {
 
 .accordion-button.collapsed h4::before {
    content: '+';
-   font-size: calc(1.275rem );
+   font-size: calc(1.275rem);
    margin-left: auto;
    font-family: monospace;
    color: unset;
@@ -2476,10 +2474,12 @@ body {
 .btn-regulament {
    margin-top: 30px;
    color: white !important;
-   font-size: 1.4rem;
+   font-size: 1.2rem;
    /* background-color: #37b0e7; */
    background-color: #8763fd;
    transition: background-color 0.5s;
+   margin-right: 1.45rem !important;
+   margin-left: 1.45rem !important;
 }
 
 /* .btn-inscriere:hover {
@@ -3058,7 +3058,7 @@ button.sl-prev,
       text-align: center;
    }
 
-   
+
 
    .navbar-brand.desktop {
       display: none;
@@ -3312,5 +3312,12 @@ button.sl-prev,
       width: calc(100% - 150px);
    }
 
+   .btn-inscriere,
+   .btn-regulament {
+      font-size: 1.1rem;
+      min-width: 155px;
+      margin-left: 5px !important;
+      margin-right: 5px !important;
+   }
 
 }

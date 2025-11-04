@@ -18,8 +18,6 @@ function initMain() {
         separator: '.',
     };
 
-
-
     const counterElevi = new countUp.CountUp('counterElevi', 6700, counterSettings);
     const counterProfesori = new countUp.CountUp('counterProfesori', 750, counterSettings);
     const counterInvingatori = new countUp.CountUp('counterInvingatori', 15, counterSettings);
@@ -90,15 +88,6 @@ if (window.domReady && window.pageLoaded) {
 
 const matches = document.querySelectorAll(".counter-val");
 
-// setTimeout(function (){
-//     matches.forEach(x => {
-//         let maxCount = x.getAttribute('data-value');
-//         if (maxCount.length > 3) {
-//             maxCount = maxCount[0] + "," + maxCount.slice(1, maxCount.length);
-//         }
-//         x.innerHTML = maxCount;
-//     })
-// }, 2700);
 
 
 var _____WB$wombat$assign$function_____ = function (name) { return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
