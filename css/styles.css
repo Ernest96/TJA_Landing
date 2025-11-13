@@ -1471,7 +1471,7 @@ a.categories-card:hover {
 #organizers {
    padding-top: 30px;
    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/bg3.png");
-   background-size: cover;
+   background-size: contain;
    background-repeat: no-repeat;
 }
 
