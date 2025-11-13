@@ -881,9 +881,9 @@ iframe {
 .btn-social {
    color: #fff;
    background-color: #695fa9;
-   width: 50px;
+   width: 46px;
    height: 45px;
-   border-radius: 50%;
+   border-radius: 50% !important;
 }
 
 .btn-social:hover {
@@ -2470,6 +2470,11 @@ body {
    font-weight: 800px;
 }
 
+.link-btn {
+   text-decoration: none;
+   display: inline-block;
+}
+
 .btn-inscriere,
 .btn-regulament {
    margin-top: 30px;
@@ -2601,7 +2606,7 @@ body {
    overflow: hidden;
    border-radius: 20px;
    box-shadow: 0 0 20px rgba(135, 99, 253, 0.1);
-   height: 395px;
+   height: 365px;
    margin-left: 1rem;
 }
 
@@ -2824,6 +2829,68 @@ button.sl-prev,
    color: white !important;
 }
 
+.register-table {
+   margin-left: auto;
+   margin-right: auto;
+   border-collapse: collapse;
+}
+
+
+.register-table td,
+.register-table th {
+   padding: 10px;
+   border: 1px solid #55448193;
+}
+
+.register-table a:hover {
+   color: #eec6e5;
+}
+
+.calendar-table {
+   border-radius: 18px;
+   justify-content: center;
+}
+
+.calendar-cell {
+   border: 1px solid #d4dbe5;
+   padding: 20px;
+   font-size: 1.2rem;
+   background: rgba(44, 44, 44, 0.207);
+   backdrop-filter: blur(7px);
+   -webkit-backdrop-filter: blur(7px);
+   width: 20%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.calendar-cell:nth-child(1) {
+   border-top-left-radius: 10px;
+}
+
+.calendar-cell:nth-child(5) {
+   border-top-right-radius: 10px;
+}
+
+.calendar-cell:nth-child(6) {
+   border-bottom-left-radius: 10px;
+}
+
+.calendar-cell:nth-child(10) {
+   border-bottom-right-radius: 10px;
+}
+
+.calendar-cell:nth-child(even) {
+   background: rgba(124, 99, 141, 0.207);
+}
+
+.date {
+   font-weight: 600;
+   color: #A699F8;
+   margin-top: 8px;
+   display: block;
+}
+
 @keyframes spin-pause {
    0% {
       transform: rotate(0deg);
@@ -2862,7 +2929,7 @@ button.sl-prev,
    }
 
    .carousel {
-      height: 460px;
+      height: 430px;
    }
 }
 
@@ -3110,6 +3177,43 @@ button.sl-prev,
    }
 
 
+   .calendar-cell {
+      width: 50%;
+   }
+
+   .calendar-cell:nth-child(2) {
+      border-top-right-radius: 10px;
+   }
+
+
+   .calendar-cell:nth-child(5) {
+      border-top-right-radius: unset;
+   }
+
+   .calendar-cell:nth-child(6) {
+      border-bottom-left-radius: unset;
+   }
+
+   .calendar-cell:nth-child(9) {
+      border-bottom-left-radius: 10px;
+   }
+
+   .calendar-cell:nth-child(10) {
+      border-bottom-right-radius: 10px;
+   }
+
+   .calendar-cell:nth-child(even) {
+      background: unset;
+
+   }
+
+   .calendar-cell:nth-child(1),
+   .calendar-cell:nth-child(4),
+   .calendar-cell:nth-child(5),
+   .calendar-cell:nth-child(8),
+   .calendar-cell:nth-child(9) {
+      background: rgba(124, 99, 141, 0.207);
+   }
 
 
 

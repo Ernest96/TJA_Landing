@@ -9,7 +9,7 @@
     <title>Tekwill Junior Ambasadors</title>
 
     <!-- change here -->
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="https://tekwill.online/wp-content/uploads/2025/11/tja-cover-scaled.png" />
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
 
     <link rel="stylesheet" href="css/preloader.css">
@@ -72,9 +72,12 @@
                     <img class="intro-logo" src="assets/img/tja-logo.png">
                     <br />
                     <div class="text-center">
-                        <div class="btn btn-inscriere ">
-                            <i class="fa fa-user-plus"></i> Înscrie-te
-                        </div>
+                        <a class="link-btn" data-bs-toggle="modal" href="#register">
+                            <div class="btn btn-inscriere ">
+                                <i class="fa fa-user-plus"></i> Înscrie-te
+                            </div>
+                        </a>
+
                         <div class="btn btn-regulament ">
                             <i class="fa-solid fa-download"></i> Regulament
                         </div>
@@ -158,6 +161,87 @@
                 </div>
             </div>
 
+            <div class="mt-3">
+
+                <div class="row">
+                    <div class="col-lg-12 col-12" data-aos="fade-up">
+                        <h1 class="categories-header section-title"> Calendarul concursului </h1>
+                        <h2 class="mt-2">Etapa Națională la Chișinău - 6 iunie 2026</h1>
+                    </div>
+                </div>
+
+                <div class="row calendar-table mt-3 align-items-stretch" data-aos="fade-up">
+
+                    <!-- 1 -->
+                    <div class="calendar-cell">
+                        <strong>Start Competiție:</strong>
+                        <span class="date">14 noiembrie 2025</span>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="calendar-cell">
+                        <strong>Termen limită de înregistrare a echipelor:</strong>
+                        <span class="date">26 decembrie 2025</span>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="calendar-cell">
+                        <strong>Maratonul de Programare a Algoritmilor în C/C++:</strong>
+                        <span class="date">31 ianuarie 2026</span>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="col-12 col-sm-6 col-md-3 calendar-cell">
+                        <strong>Termen limită expediere proiecte (Design Grafic și
+                            Proiectare și
+                            Dezvoltare Web):</strong>
+                        <span class="date">20 februarie 2026</span>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="col-12 col-sm-6 col-md-3 calendar-cell">
+                        <strong>Anunțarea echipelor finaliste pentru semifinale (
+                            Design Grafic și
+                            Proiectare si
+                            Dezvoltare Web):</strong>
+                        <span class="date">16 martie 2026</span>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="calendar-cell">
+                        <strong>TJA Regional Chișinău (regiunile Nord, Centru si mun.
+                            Chisinău):</strong>
+                        <span class="date">21 martie 2026</span>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="calendar-cell">
+                        <strong>TJA Regional Cahul (regiunile Sud și
+                            UTA Găgăuzia):</strong>
+                        <span class="date">28 martie 2026</span>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="calendar-cell">
+                        <strong>Concursul la Educație Digitală, ciclul primar:</strong>
+                        <span class="date">25 aprilie 2026</span>
+                    </div>
+
+                    <!-- 9 -->
+                    <div class="col-12 col-sm-6 col-md-3 calendar-cell">
+                        <strong>Termen limită proiecte (Mobile, AI, Video Storytelling, Antreprenoriat, IEC):</strong>
+                        <span class="date">5 mai 2026</span>
+                    </div>
+
+                    <!-- 10 -->
+                    <div class="col-12 col-sm-6 col-md-3 calendar-cell">
+                        <strong>Anunțarea echipelor finaliste TJA Național:</strong>
+                        <span class="date">20 mai 2026</span>
+                    </div>
+
+                </div>
+            </div>
+
             <div class="categories">
                 <div class="row">
                     <div class="col-lg-12 col-12">
@@ -165,61 +249,68 @@
                     </div>
                 </div>
 
-                <div class="categories-container" data-aos="fade-up">
+                <div class="categories-container">
 
-                    <a class="categories-card" data-bs-toggle="modal" href="#challenge">
+                    <a class="categories-card" data-aos="fade-up" data-bs-toggle="modal" href="#challenge">
                         <div>
                             <img src="assets/img/categories/programare.png">
                             <h4 class="category-title">Programarea Algoritmilor în C/C++</h4>
                         </div>
                     </a>
 
-                    <a class="categories-card" data-bs-toggle="modal" href="#challenge">
+                    <a class="categories-card" data-aos="fade-up" data-bs-toggle="modal" href="#challenge">
                         <div>
                             <img src="assets/img/categories/web.png">
                             <h4 class="category-title">Proiectarea și Dezvoltarea Web</h4>
                         </div>
                     </a>
 
-                    <a class="categories-card" data-bs-toggle="modal" href="#challenge">
+                    <a class="categories-card" data-aos="fade-up" data-bs-toggle="modal" href="#challenge">
                         <div>
                             <img src="assets/img/categories/design.png">
                             <h4 class="category-title">Design Grafic</h4>
                         </div>
                     </a>
 
-                    <a class="categories-card" data-bs-toggle="modal" href="#challenge">
+                    <a class="categories-card" data-aos="fade-up" data-bs-toggle="modal" href="#challenge">
                         <div>
                             <img src="assets/img/categories/video.png">
                             <h4 class="category-title">Video Storytelling</h4>
                         </div>
                     </a>
 
-                    <a class="categories-card" data-bs-toggle="modal" href="#challenge">
+                    <a class="categories-card" data-aos="fade-up" data-bs-toggle="modal" href="#challenge">
                         <div>
                             <img src="assets/img/categories/mobile.png">
                             <h4 class="category-title">Dezvoltarea Aplicațiilor Mobile</h4>
                         </div>
                     </a>
 
-                    <a class="categories-card" data-bs-toggle="modal" href="#challenge">
+                    <a class="categories-card" data-aos="fade-up" data-bs-toggle="modal" href="#challenge">
                         <div>
                             <img src="assets/img/categories/ai.png">
                             <h4 class="category-title">Inteligența Artificială</h4>
                         </div>
                     </a>
 
-                    <a class="categories-card" data-bs-toggle="modal" href="#challenge">
+                    <a class="categories-card" data-aos="fade-up" data-bs-toggle="modal" href="#challenge">
                         <div>
                             <img src="assets/img/categories/antreprenoriat.png">
                             <h4 class="category-title">Antreprenoriat</h4>
                         </div>
                     </a>
 
-                    <a class="categories-card" data-bs-toggle="modal" href="#challenge">
+                    <a class="categories-card" data-aos="fade-up" data-bs-toggle="modal" href="#challenge">
                         <div>
                             <img src="assets/img/categories/inteligenta.png">
                             <h4 class="category-title">Inteligența Emoțională în Comunicare</h4>
+                        </div>
+                    </a>
+
+                    <a class="categories-card" data-aos="fade-up" data-bs-toggle="modal" href="#challenge">
+                        <div>
+                            <img src="assets/img/categories/eddig.png">
+                            <h4 class="category-title">Educație digitală</h4>
                         </div>
                     </a>
 
@@ -246,7 +337,7 @@
                         <div class="reason-number">1</div>
                         <img id="cosmonaut1" src="assets/img/cosmonaut_3.png"
                             class="img-fluid mx-auto mb-3 cosmonaut-img" alt="Cosmonaut 1">
-                        <h5 class="fw-bold">Primești mentorat de la profesori Tekwill în Fiecare Școală.</h5>
+                        <h5 class="fw-bold">Primești mentorat de la profesorii Tekwill în Fiecare Școală.</h5>
                     </div>
                 </div>
 
@@ -254,8 +345,8 @@
                     <div class="card reason-card h-100 text-center p-4 position-relative" data-aos="fade-up"
                         data-aos-delay="400">
                         <div class="reason-number">2</div>
-                        <img id="cosmonaut2" src="assets/img/cosmonaut_1.png" class="img-fluid mx-auto mb-3 cosmonaut-img"
-                            alt="Cosmonaut 2">
+                        <img id="cosmonaut2" src="assets/img/cosmonaut_1.png"
+                            class="img-fluid mx-auto mb-3 cosmonaut-img" alt="Cosmonaut 2">
                         <h5 class="fw-bold">Îți dezvolți gândirea critică, creativitatea și abilitățile digitale.</h5>
                     </div>
                 </div>
@@ -277,7 +368,7 @@
         <div class="container container-front">
             <div class="row">
                 <div class="col-lg-12 ">
-                    <h1 class="section-title" data-aos="fade-up">Moldova pe scena internațională</h1>
+                    <h1 class="section-title" data-aos="fade-up">TJA - primul pas spre competiții globale</h1>
                 </div>
             </div>
 
@@ -286,16 +377,16 @@
                 <div class="col-xl-5 col-lg-12">
                     <div class="about-p">
                         <p>
+
                             În doar cinci ani, elevii Tekwill Junior Ambassadors au reușit să cucerească scene
                             internaționale de prestigiu precum <span class="intro-accent1">Intel® AI Global Impact
                                 Festival</span>,
                             <span class="intro-accent1">e-ICON World Contest</span>
-                            (Coreea de Sud) și <span class="intro-accent1">Adobe Championship SUA</span>.
-                            În cei cinci ani de activitate, elevii noștri au cucerit scene internaționale de prestigiu,
-                            demonstrând că talentul, ambiția și munca susținută pot depăși orice granițe. Prin
-                            proiectele lor inovatoare, tinerii au adus acasă numeroase premii, fiecare reflectând nu
-                            doar creativitatea și abilitățile tehnice dobândite, ci și dedicarea față de cauze cu impact
-                            real în societate.
+                            (Coreea de Sud) și <span class="intro-accent1">Adobe Championship SUA</span>, tinerii au
+                            demonstrat că talentul, ambiția și perseverența pot
+                            depăși orice granițe. Fie că au creat identități vizuale memorabile în competiții de design
+                            grafic, au dezvoltat aplicații mobile funcționale sau au construit soluții inteligente
+                            bazate pe AI, tinerii noștri au transformat pasiunea în rezultate reale.
                         </p>
                     </div>
 
@@ -455,6 +546,21 @@
                     </div>
                 </div>
 
+                <div data-aos="fade-up" class="mt-3">
+                    <h2 class="section-title text-uppercase mt-lg-0">Fondatori</h2>
+                </div>
+
+                <div class="sponsors" data-aos="fade-up">
+
+                    <div class="sponsor white">
+                        <img id="tekwill-logo" src="assets/img/partners/tekwill.png">
+                    </div>
+
+                    <div class="sponsor white">
+                        <img id="tekwill-logo" src="assets/img/partners/atic.png">
+                    </div>
+                </div>
+
 
                 <div data-aos="fade-up" class="mt-3">
                     <h2 class="section-title text-uppercase mt-lg-0">Parteneri de dezvoltare</h2>
@@ -463,29 +569,25 @@
 
                 <div class="sponsors" data-aos="fade-up">
 
-                    <div class="sponsor white">
-                        <img id="tekwill-logo" src="assets/img/partners/sweden.png">
-                    </div>
 
                     <div class="sponsor white">
                         <img src="assets/img/partners/mecc.png">
                     </div>
 
-                    <div class="sponsor white">
-                        <img src="assets/img/partners/atic.png">
-                    </div>
 
                     <div class="sponsor white">
-                        <img src="assets/img/partners/tekwill.png">
+                        <img id="tekwill-logo" src="assets/img/partners/sweden.png">
                     </div>
+
+                     <div class="sponsor white">
+                        <img src="assets/img/partners/inotek.png">
+                    </div>
+
 
                     <div class="sponsor white">
                         <img src="assets/img/partners/utm.png">
                     </div>
-
-                    <div class="sponsor white">
-                        <img src="assets/img/partners/inotek.png">
-                    </div>
+                   
 
                     <div class="sponsor white">
                         <img src="assets/img/partners/bph.png">
@@ -499,13 +601,41 @@
                 </div>
 
                 <div data-aos="fade-up" class="mt-3">
-                    <h2 class="section-title text-uppercase mt-lg-0">Parteneri</h2>
+                    <h2 class="section-title text-uppercase mt-lg-0">Ambassador Partner</h2>
                 </div>
 
                 <div class="sponsors" data-aos="fade-up">
 
                     <div class="sponsor white">
                         <img id="tekwill-logo" src="assets/img/partners/maib.png">
+                    </div>
+
+                    <div class="sponsor ">
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="mt-3">
+                    <h2 class="section-title text-uppercase mt-lg-0">Changemaker Partner</h2>
+                </div>
+
+                <div class="sponsors" data-aos="fade-up">
+
+                    <div class="sponsor white">
+                        <img id="tekwill-logo" src="assets/img/partners/unfpa.png">
+                    </div>
+
+                    <div class="sponsor ">
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="mt-3">
+                    <h2 class="section-title text-uppercase mt-lg-0">Innovation Partner</h2>
+                </div>
+
+                <div class="sponsors" data-aos="fade-up">
+
+                    <div class="sponsor white">
+                        <img id="tekwill-logo" src="assets/img/partners/cned.png">
                     </div>
 
                     <div class="sponsor ">
@@ -527,7 +657,7 @@
         <div class="col-lg-4 my-3 my-lg-0 justify-content-center">
             <a data-aos="zoom-in" data-aos-delay="200" data-aos-offset="0" class="btn btn-social btn-social mx-2"
                 target="_blank" href="https://www.facebook.com/tekwillinfiecarescoala/" aria-label="Facebook"><i
-                    class="fab fa-facebook-f"></i></a>
+                    class="fab fa-facebook-f"></i> </a>
             <a data-aos="zoom-in" data-aos-delay="400" data-aos-offset="0" class="btn btn-social btn-social mx-2"
                 target="_blank" href="https://www.instagram.com/tekwillinfiecarescoala/" aria-label="Instagram"><i
                     class="fab fa-instagram"></i></a>
@@ -548,10 +678,10 @@
             </div>
             <div class="modal-body">
 
-                <h2 class="text-uppercase text-center">Challenge title
+                <h2 class="text-uppercase text-center">CHALLENGES COMING SOON
                 </h2>
 
-                <br />
+                <!-- <br />
 
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor nesciunt sunt, velit eum cumque
@@ -560,7 +690,80 @@
                 </p>
 
                 <br />
-                <h5>Some info...</h5>
+                <h5>Some info...</h5> -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.png" alt="Close modal" />
+            </div>
+            <div class="modal-body">
+
+                <h2 class="text-uppercase text-center">Formulare de Înregistrare și Colectare Proiecte
+                </h2>
+
+                <br />
+
+                <table class="table register-table align-middle text-center">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Categorie</th>
+                            <th>Link de Înregistrare</th>
+                            <!-- <th>Link de Colectare Proiecte</th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Programarea Algoritmilor în C/C++</td>
+                            <td><a href="https://forms.gle/sHkHCHxKTcufeyrz6" target="_blank">Deschide Formular</a></td>
+                            <!-- <td>-</td> -->
+                        </tr>
+                        <tr>
+                            <td>Proiectare și Dezvoltare Web</td>
+                            <td><a href="https://forms.gle/CZ72bDZGvHPg9XJf8" target="_blank">Deschide Formular</a></td>
+                            <!-- <td><a href="https://forms.gle/EeotNDZ8FQ8ZowXf9" target="_blank">Deschide Formular</a></td> -->
+                        </tr>
+                        <tr>
+                            <td>Design Grafic</td>
+                            <td><a href="https://forms.gle/ojjVrQXwhzaYHJAA8" target="_blank">Deschide Formular</a></td>
+                            <!-- <td><a href="https://forms.gle/nG3QLmU9m3XYo9C28" target="_blank">Deschide Formular</a></td> -->
+                        </tr>
+                        <tr>
+                            <td>Antreprenoriat</td>
+                            <td><a href="https://forms.gle/gvcwK9jqQJLbjM9N6" target="_blank">Deschide Formular</a></td>
+                            <!-- <td><a href="https://forms.gle/FAcdmDbqN4x9JHPv6" target="_blank">Deschide Formular</a></td> -->
+                        </tr>
+                        <tr>
+                            <td>Inteligența Artificială</td>
+                            <td><a href="https://forms.gle/39huVHvWyZnzPrVN8" target="_blank">Deschide Formular</a></td>
+                            <!-- <td><a href="https://forms.gle/uDaJmM2GX1s1qDgk6" target="_blank">Deschide Formular</a></td> -->
+                        </tr>
+                        <tr>
+                            <td>Dezvoltarea Aplicațiilor Mobile</td>
+                            <td><a href="https://forms.gle/zQzxkJ3EQTjUXt9C9" target="_blank">Deschide Formular</a></td>
+                            <!-- <td><a href="https://forms.gle/8EjqZmtcdP5PC6zg6" target="_blank">Deschide Formular</a></td> -->
+                        </tr>
+                        <tr>
+                            <td>Inteligența Emoțională în Comunicare</td>
+                            <td><a href="https://forms.gle/wrrf5B2fgKoQJLKN6" target="_blank">Deschide Formular</a></td>
+                            <!-- <td><a href="https://forms.gle/mgHEyY6k74oGMqtt9" target="_blank">Deschide Formular</a></td> -->
+                        </tr>
+                        <tr>
+                            <td>Video Storytelling</td>
+                            <td><a href="https://forms.gle/PGczdWTvBLomT9jC6" target="_blank">Deschide Formular</a></td>
+                            <!-- <td><a href="https://forms.gle/PbcFSXKdRoPZTKdV6" target="_blank">Deschide Formular</a></td> -->
+                        </tr>
+                        <tr>
+                            <td>Educație Digitală</td>
+                            <td><a href="https://forms.gle/iS14DKHquC3PZeBS8" target="_blank">Deschide Formular</a></td>
+                            <!-- <td>-</td> -->
+                        </tr>
+                    </tbody>
+                </table>
 
 
             </div>
