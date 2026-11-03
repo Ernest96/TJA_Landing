@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "tja",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "5501"],
+      "port": 5501
+    }
+  ]
+}
