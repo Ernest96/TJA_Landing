@@ -208,6 +208,18 @@ function initAboutStory() {
 
 initAboutStory();
 
+// Category modals: once the content scrolls, a band behind the close button
+// hides the text passing under it (the band is .modal-dialog::before in styles.css).
+function initModalScrollBand() {
+    document.querySelectorAll('.category-modal .modal-dialog').forEach(dialog => {
+        dialog.addEventListener('scroll', () => {
+            dialog.classList.toggle('is-scrolled', dialog.scrollTop > 0);
+        }, { passive: true });
+    });
+}
+
+initModalScrollBand();
+
 // The pattern behind "Ce este TJA?" is a band that fades out at the statement; its height
 // follows the statement's place, which moves with the screen size.
 function fitAboutPattern() {

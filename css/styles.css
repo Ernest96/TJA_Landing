@@ -1762,26 +1762,62 @@ iframe {
 }
 
 /* Category modals */
+/* max-height leaves the same gap below as margin-top leaves above, so long
+   lists scroll inside the card instead of running into the bottom edge */
 .category-modal .modal-dialog {
+   --pad-top: 56px;
+   --pad-x: 64px;
+   --band: 96px;
    max-width: min(760px, 92%);
    margin-top: 8vh;
-   padding: 56px 64px 52px;
+   max-height: 84vh;
+   max-height: 84dvh;
+   padding: var(--pad-top) var(--pad-x) 52px;
    overflow-y: auto;
+}
+
+/* Band across the top, under the close button: shown by scripts.js (.is-scrolled)
+   once the content scrolls, so text slides under it instead of past the button.
+   Sticky `top` counts from inside the padding; the margins stretch it over the
+   padding and give back its height so nothing below moves. */
+.category-modal .modal-dialog::before {
+   content: '';
+   position: sticky;
+   top: calc(-1 * var(--pad-top));
+   z-index: 1;
+   display: block;
+   height: var(--band);
+   margin: calc(-1 * var(--pad-top)) calc(-1 * var(--pad-x)) calc(var(--pad-top) - var(--band));
+   background: linear-gradient(rgb(27, 22, 42) 80%, rgba(27, 22, 42, 0));
+   opacity: 0;
+   transition: opacity 0.2s;
+   pointer-events: none;
+}
+
+.category-modal .modal-dialog.is-scrolled::before {
+   opacity: 1;
 }
 
 .category-modal .modal-body {
    padding: 0;
 }
 
+/* Sticky, so it stays in the top corner while a long modal scrolls. Floated
+   with negative margins (top: 56 - 32, right: 64 - 32) so it sits in the
+   corner without pushing the content down; sticky `top` counts from inside
+   the dialog padding, hence the same negative value. The fill keeps it
+   readable over the text scrolling underneath. */
 .category-modal-close {
-   position: absolute;
-   top: 32px;
-   right: 32px;
+   position: sticky;
+   top: -24px;
+   z-index: 2;
+   float: right;
+   margin: -24px -32px 0 0;
    width: 48px;
    height: 48px;
    border-radius: 50%;
    border: 1px solid rgba(255, 255, 255, 0.25);
-   background: transparent;
+   background: rgba(30, 25, 48, 0.9);
    color: #fff;
    font-size: 1.1rem;
    display: flex;
@@ -1906,13 +1942,18 @@ iframe {
 /* Registration modal: same frame as the category modals, the forms as rows that open on click;
    kept compact so the whole list fits on one screen */
 .category-modal.register-modal .modal-dialog {
+   --pad-top: 40px;
+   --pad-x: 48px;
+   --band: 90px;
    margin-top: 5vh;
-   padding: 40px 48px 40px;
+   max-height: 90vh;
+   max-height: 90dvh;
+   padding: var(--pad-top) var(--pad-x) 40px;
 }
 
 .category-modal.register-modal .category-modal-close {
-   top: 26px;
-   right: 26px;
+   top: -14px;
+   margin: -14px -22px 0 0;
 }
 
 .category-modal.register-modal .category-modal-title {
@@ -2010,12 +2051,15 @@ iframe {
    }
 
    .category-modal.register-modal .modal-dialog {
-      padding: 56px 18px 22px;
+      --pad-top: 56px;
+      --pad-x: 18px;
+      --band: 68px;
+      padding: var(--pad-top) var(--pad-x) 22px;
    }
 
    .category-modal.register-modal .category-modal-close {
-      top: 12px;
-      right: 12px;
+      top: -44px;
+      margin: -44px -6px 0 0;
    }
 
    .category-modal.register-modal .category-modal-title {
@@ -2025,13 +2069,18 @@ iframe {
    .category-modal .modal-dialog {
       max-width: none;
       width: 100%;
+      --pad-top: 64px;
+      --pad-x: 22px;
+      --band: 72px;
       margin-top: 4vh;
-      padding: 64px 22px 28px;
+      max-height: 92vh;
+      max-height: 92dvh;
+      padding: var(--pad-top) var(--pad-x) 28px;
    }
 
    .category-modal-close {
-      top: 14px;
-      right: 14px;
+      top: -50px;
+      margin: -50px -8px 0 0;
       width: 42px;
       height: 42px;
    }
