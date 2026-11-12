@@ -1544,7 +1544,7 @@ iframe {
 
 .partner-tier {
    display: grid;
-   grid-template-columns: 230px minmax(0, 1fr);
+   grid-template-columns: 240px minmax(0, 1fr);
    align-items: center;
    gap: 28px;
    padding: 24px 0;
@@ -1587,6 +1587,22 @@ iframe {
    object-fit: contain;
 }
 
+/* ANCE keeps its own colours on its white background, so only its corners are rounded */
+.partner-logo img.is-plate {
+   border-radius: 8px;
+}
+
+/* EU4Innovation East is a long strip of co-funder logos: it takes three columns and
+   the row's height instead of a 3:2 tile; phones get a stacked version (<picture>) */
+.partner-logo.is-wide {
+   grid-column: span 3;
+   aspect-ratio: auto;
+}
+
+.partner-logo picture {
+   display: contents;
+}
+
 /* label moves above the logos once the row gets too narrow for both */
 @media (max-width: 1199px) {
    .partner-tier {
@@ -1610,6 +1626,11 @@ iframe {
    .partner-logo {
       width: calc((100% - 32px) / 3);
    }
+
+   .partner-logo.is-wide {
+      width: 100%;
+      padding: 22px 24px;
+   }
 }
 
 @media (max-width: 576px) {
@@ -1623,6 +1644,10 @@ iframe {
 
    .partner-logo {
       width: calc((100% - 12px) / 2);
+   }
+
+   .partner-logo.is-wide img {
+      max-width: 240px;
    }
 }
 
