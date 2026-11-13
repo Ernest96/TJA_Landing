@@ -1581,7 +1581,10 @@ iframe {
    border-radius: 16px;
 }
 
+/* --logo-w (set per logo in index.html) evens out how big the logos look: solid
+   shapes like Orange get less width, thin line logos like MEC or UTM get more */
 .partner-logo img {
+   width: var(--logo-w, auto);
    max-width: 100%;
    max-height: 100%;
    object-fit: contain;
